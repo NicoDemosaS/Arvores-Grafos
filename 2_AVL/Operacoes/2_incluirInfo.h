@@ -1,6 +1,8 @@
 #ifndef CRIAR_ARVORE_BINARIA_H
 #define CRIAR_ARVORE_BINARIA_H
 
+// Declaração antecipada para evitar warning
+int alturaRecursiva(pNohArvore raiz);
 
 pNohArvore rotacaoDireita(pNohArvore raiz){
 
@@ -96,7 +98,7 @@ pNohArvore incluirInfoRecursivo(pNohArvore raiz, void *info, FuncaoComparacao pf
                novaRaiz = rotacaoDuplaDireita(raiz);
        }
 
-       // observe que o recalculo do fator � a partir da
+       // observe que o recalculo do fator � a partir da
        // nova raiz, pois a raiz anterior virou filho da
        // nova raiz
        recalcularFatorBalanceamento(novaRaiz);

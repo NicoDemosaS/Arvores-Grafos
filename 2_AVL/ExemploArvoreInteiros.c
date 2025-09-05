@@ -17,6 +17,7 @@ pDArvore constroiArvore(int dados[], int tam){
 
 int main(){
 
+   int ex0[] = {5, 8, 3, 1};          
    int ex1[] = {5, 8, 3, 7, 6};             // rotacao simples - direita
    int ex2[] = {5, 8, 3, 12, 14};           // rotacao simples - esquerda
    int ex3[] = {5, 10, 3, 7, 8};             // rotacao dupla a direita
@@ -27,6 +28,13 @@ int main(){
    //constroiArvore(ex2, 5);
    //constroiArvore(ex3, 5);
    //constroiArvore(ex4, 8);
-   constroiArvore(ex5, 9);
+   pDArvore arvore1, arvore2;
+   //arvore1 = constroiArvore(ex1, 5);
+   arvore2 = constroiArvore(ex1, 5);
+   //printf("Quantidade de NOHS: %d", quantidadeNohsInternos(arvore));
+
+   //printf("SAO IGUAIS: %d", ArvoreIguais(arvore1, arvore2, comparaInt));
+
+   printf("EH ESTRITO BIARNIO?:%d", estritamenteBinario(arvore2));
 
  }

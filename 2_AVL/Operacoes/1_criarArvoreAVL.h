@@ -4,7 +4,7 @@
 /* --------------------------*/
 pDArvore criarArvoreAVL(){
 
-    pDArvore desc = malloc(sizeof(pDArvore));
+    pDArvore desc = malloc(sizeof(DArvore));
     desc->raiz           = NULL;
     desc->quantidadeNohs = 0;
 

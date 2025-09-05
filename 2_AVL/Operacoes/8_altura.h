@@ -1,8 +1,6 @@
 #ifndef ALTURA_ARVORE_BINARIA_H
 #define ALTURA_ARVORE_BINARIA_H
 
-
-
 int alturaRecursiva(pNohArvore raiz){
 
    if (raiz == NULL)

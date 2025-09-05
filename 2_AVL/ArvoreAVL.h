@@ -1,6 +1,8 @@
 #ifndef ARVORE_BINARIA_H
 #define ARVORE_BINARIA_H
 
+#include <stdlib.h>
+
 #include "TAD_ArvoreAVL.h"
 
 #include "Operacoes/0_struct_Arvore.h"
@@ -26,6 +28,10 @@
 
 #include "Operacoes/13_desenhaArvore.h"
 
+#include "Operacoes/14_NosInternos.h"
 
+#include "Operacoes/15_ArvoresIguais.h"
+
+#include "Operacoes/16_EstritoBinario.h"
 
 #endif

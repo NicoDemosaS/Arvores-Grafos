@@ -6,7 +6,7 @@
 void desenhaArvoreRecursivo(pNohArvore raiz, int depth, char *path, int right, FuncaoImpressao fi) {
 
     if (raiz == NULL)
-        return;
+    return;
 
     depth++;
 
