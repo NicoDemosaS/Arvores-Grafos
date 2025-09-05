@@ -15,6 +15,20 @@ pDArvore constroiArvore(int dados[], int tam){
 }
 
 
+pDArvore constroiArvoreEspelho(int dados[], int tam){
+
+    pDArvore arvore = criarArvoreAVL();
+    int i;
+    for(i=0; i<tam; i++){
+        incluirInfoInv(arvore, alocaInt(dados[i]),comparaInt);
+        desenhaArvore(arvore, imprimeInt);
+    }
+
+    return arvore;
+}
+
+
+
 int main(){
 
    int ex0[] = {5, 8, 3, 1};          
@@ -28,13 +42,19 @@ int main(){
    //constroiArvore(ex2, 5);
    //constroiArvore(ex3, 5);
    //constroiArvore(ex4, 8);
-   pDArvore arvore1, arvore2;
+   pDArvore arvore1, arvore2, arvoreespelho;
    //arvore1 = constroiArvore(ex1, 5);
    arvore2 = constroiArvore(ex1, 5);
    //printf("Quantidade de NOHS: %d", quantidadeNohsInternos(arvore));
 
    //printf("SAO IGUAIS: %d", ArvoreIguais(arvore1, arvore2, comparaInt));
 
-   printf("EH ESTRITO BIARNIO?:%d", estritamenteBinario(arvore2));
+   //printf("EH ESTRITO BIARNIO?:%d", estritamenteBinario(arvore2));
+
+   arvoreespelho = constroiArvoreEspelho(ex2, 5);
+
+   //printf("TA BALANCEADO: %d", balanceada(arvore2));
+
+   printf("EH ABB: %d", isABB(arvore2, arvore2->raiz->info, arvore2->raiz->info, comparaInt));
 
  }

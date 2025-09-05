@@ -34,4 +34,10 @@
 
 #include "Operacoes/16_EstritoBinario.h"
 
+#include "Operacoes/17_ConstroiInverso.h"
+
+#include "Operacoes/18_ArvoreBalanceada.h"
+
+#include "Operacoes/19_ehabb.h"
+
 #endif
