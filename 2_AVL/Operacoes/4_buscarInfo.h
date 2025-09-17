@@ -3,7 +3,12 @@
 
 int buscarInfoRecursivo (pNohArvore raiz, void *info, FuncaoComparacao pfc)
 {
-    return 0;
+    if(raiz == NULL)
+        return 0;
+    if(pfc(raiz->info, info)==0)
+        return 1; 
+
+    return buscarInfoRecursivo(raiz->esquerda, info, pfc) || buscarInfoRecursivo(raiz->direita, info, pfc);
 }
 
 

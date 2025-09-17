@@ -8,6 +8,7 @@ void emOrdemRecursiva(pNohArvore raiz, FuncaoImpressao fi){
        emOrdemRecursiva(raiz->esquerda, fi);
        fi(raiz->info);
        emOrdemRecursiva(raiz->direita, fi);
+       
     }
 
 }
