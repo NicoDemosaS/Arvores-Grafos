@@ -16,7 +16,13 @@
 
 #include "Operacoes/12_desenhaArvore.h"
 
+
+//Exercicios
 #include "Operacoes/22_ancestralComum.h"
+
+#include "Operacoes/23_similares.h"
+
+#include "Operacoes/24_nohsPretos.h"
 
 
 #endif

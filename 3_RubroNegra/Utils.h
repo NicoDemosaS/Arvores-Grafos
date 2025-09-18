@@ -7,9 +7,13 @@
 /* tipo de dado INT */
 /* ---------------------------------------- */
 int comparaInt(void *info1, void *info2){
-    int *p1 = (int *) info1;
-    int *p2 = (int *) info2;
-    return *p2 - *p1;
+   if (!info1 || !info2) {
+      //printf("[DEBUG] comparaInt recebeu NULL! info1=%p info2=%p\n", info1, info2);
+      return 0;
+   }
+   int *p1 = (int *) info1;
+   int *p2 = (int *) info2;
+   return *p1 - *p2;
 }
 /* ---------------------------------------- */
 void imprimeInt(void *info){
