@@ -10,7 +10,7 @@ pNohBTree excluirInfoBTreeRecursivo(pNohBTree raiz, int ordem, void *chave, Func
    int i;
    int qtde = raiz->listaChavesValores->quantidade;
 
-   // procurar chave no nó atual
+   // procurar chave no no atual
    for (i = 1; i <= qtde; i++){
        pChaveValor pcv = buscarInfoPos(raiz->listaChavesValores, i);
 
@@ -23,7 +23,7 @@ pNohBTree excluirInfoBTreeRecursivo(pNohBTree raiz, int ordem, void *chave, Func
                excluirInfoPos(raiz->listaChavesValores, i);
            } else {
                // caso 2: chave em nó interno
-               // pegar sucessor (menor chave da subárvore direita)
+              
                pNohBTree filho = pcv->filhoMaior;
                while (filho && filho->primeiroFilho != NULL)
                    filho = filho->primeiroFilho;
@@ -85,3 +85,4 @@ int excluirInfoBTree(pDBTree arvore, void *chave, FuncaoComparacao pfc){
 }
 
 #endif
+
