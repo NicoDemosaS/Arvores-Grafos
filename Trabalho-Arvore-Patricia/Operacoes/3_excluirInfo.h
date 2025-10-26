@@ -8,7 +8,7 @@ pNohPrefixo excluirInfoRecursivo(pNohPrefixo raiz, char chave[], int k, int* L){
 
 /* ----------------------------------------------------------*/
 int excluirInfo(pDPrefixo arvore, char chave[], int k){
-
+    
 
 }
 

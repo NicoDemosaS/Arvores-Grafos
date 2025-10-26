@@ -1,6 +1,6 @@
 #ifndef INCLUIR_INFO_PREFIXO_H
 #define INCLUIR_INFO_PREFIXO_H
-#include <string.h>
+
 
 int buscarInfoPrefixo (pDPrefixo, char [], int);
 
