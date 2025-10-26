@@ -3,8 +3,6 @@
 
 /* --------------------------*/
 
-
-
 int quantidadeNohsInternosRecursivo(pNohArvore raiz){
     if(raiz == NULL)
         return 0;

@@ -90,10 +90,16 @@ int main(){
 
 
     // Outros testes
-    
+
     printf("\n==== TESTE: umFilho ====\n");
     int qtdUmFilho = filhoUnico(arvore2);
     printf("Quantidade de nós com exatamente um filho: %d\n", qtdUmFilho);
+
+    printf("\n==== TESTE: somenteNivel ====\n");
+    int nivelDesejado = 1; // Altere para o nível que deseja testar
+    printf("Nós no nível %d: ", nivelDesejado);
+    somenteNivel(arvore2, nivelDesejado, imprimeInt);
+    printf("\n");
 
 
     // -----------------------------

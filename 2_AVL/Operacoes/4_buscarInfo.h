@@ -3,7 +3,7 @@
 
 int buscarInfoRecursivo (pNohArvore raiz, void *info, FuncaoComparacao pfc)
 {
-    if(raiz == NULL)
+    if(raiz == NULL) // Provavelmente seria mais eficiente comparar com o pai, sendo maior indo pra um lado ou menor indo ao outro
         return 0;
     if(pfc(raiz->info, info)==0)
         return 1; 
